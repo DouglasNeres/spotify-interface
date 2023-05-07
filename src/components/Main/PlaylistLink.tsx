@@ -1,6 +1,5 @@
 import Image from "next/image";
-import { Play } from "lucide-react";
-import ButtonPlayGreen from "./ButtonPlayGreen";
+import ButtonPlayGreen from "../ButtonPlayGreen";
 
 interface PlaylistLinkProps{
   image: string;

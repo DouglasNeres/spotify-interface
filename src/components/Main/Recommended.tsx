@@ -1,5 +1,5 @@
 import Image from "next/image"
-import ButtonPlayGreen from "./ButtonPlayGreen";
+import ButtonPlayGreen from "../ButtonPlayGreen";
 
 interface RecommendedProps{
   image: string;
