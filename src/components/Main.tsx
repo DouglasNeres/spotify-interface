@@ -65,7 +65,7 @@ const recommendedArea = [
 
 export function Main() {
   return (
-    <div>
+    <div className="flex-1 p-6">
       <div className="flex items-center gap-3">
         <button className="rounded-full bg-black/40 p-1">
           <ChevronLeft />

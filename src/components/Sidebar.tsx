@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import { Home as HomeIcon, Library, SearchIcon } from "lucide-react";
 
-export default function Sidebar() {
+export function Sidebar() {
   return (
     <>
       <div className="flex items-center gap-2">
