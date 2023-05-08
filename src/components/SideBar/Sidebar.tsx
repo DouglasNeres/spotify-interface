@@ -19,16 +19,16 @@ const linkPages = [
 
 const linkPlaylist = [
   {
-    linkNamed: "Gospel 2023",
+    title: "Gospel 2023",
   },
   {
-    linkNamed: "Lo-Fi Relax",
+    title: "Lo-Fi Relax",
   },
   {
-    linkNamed: "Top Brasil",
+    title: "Top Brasil",
   },
   {
-    linkNamed: "Worship",
+    title: "Worship",
   },
 ];
 
@@ -48,9 +48,22 @@ export function Sidebar() {
         alt="Logo Spotify"
       />
       <nav className="space-y-5 mt-10">
-        
+        {linkPages.map((item) =>{
+          return(
+            <SidebarLinks type="pages" icon={item.linkIcon} name={item.linkName} key={item.linkName}/>
+          )
+        })}
       </nav>
-      <nav className="mt-10 pt-10 border-top border-zinc-1000 flex flex-col gap-3"></nav>
+
+      <div className="border border-zinc-500 mt-10"></div>
+      
+      <nav className="pt-10 border-top border-zinc-1000 flex flex-col gap-3">
+      {linkPlaylist.map((item) =>{
+          return(
+            <SidebarLinks type="playlist" name={item.title} key={item.title}/>
+          )
+        })}
+      </nav>
     </>
   );
 }

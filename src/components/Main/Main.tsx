@@ -1,4 +1,5 @@
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ArrowButtons } from "../Header/ArrowButtons";
+import { Profile } from "../Header/Profile";
 import { PlaylistLink } from "./PlaylistLink";
 import { Recommended } from "./Recommended";
 
@@ -66,16 +67,12 @@ const recommendedArea = [
 export function Main() {
   return (
     <div className="flex-1 p-6">
-      <div className="flex items-center gap-3">
-        <button className="rounded-full bg-black/40 p-1">
-          <ChevronLeft />
-        </button>
-        <button className="rounded-full bg-black/40 p-1">
-          <ChevronRight />
-        </button>
+      <div className="flex items-center gap-3 justify-between">
+        <ArrowButtons />
+        <Profile />
       </div>
-
-      <h1 className="font-semibold text-3xl mt-10">Good Afetrmoon</h1>
+      
+      <h1 className="font-semibold text-3xl mt-10">Good Afternoon</h1>
 
       <div className="grid grid-cols-3 gap-4 mt-8">
         {playlistArea.map((item) => {
